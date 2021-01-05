@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "js-grid"
+packages = [{ include = "jumpscale" }]
+version = "1.0.0"
+description = "Minimal threefold grid SDK"
+authors = ["xmonader <xmonader@gmail.com>"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+js-ng = "11.0b11"
+python = "^3.6"
+stellar-sdk = "2.10.0"
+base58 = "^2.0.0"
+netaddr = "^0.7.19"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.pytest.ini_options]
+markers = ["integration: marks tests as integration (deselect with '-m \"not integration\"')",
+           "unittests"]
+
