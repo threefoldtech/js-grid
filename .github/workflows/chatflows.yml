@@ -2,7 +2,7 @@ name: Chatflows
 
 on:
   push:
-    branches: [ development_chatflow_test ]
+    branches: [ setup_ci ]
 
 jobs:
   build:
